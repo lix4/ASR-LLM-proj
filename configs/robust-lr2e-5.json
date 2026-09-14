@@ -1,0 +1,68 @@
+{
+  "model_id": "Qwen/Qwen3-ASR-0.6B",
+  "model_revision": "5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+  "upstream_revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+  "data_dir": "data",
+  "model_dir": "models",
+  "output_dir": "outputs",
+  "device": "auto",
+  "cpu_threads": 4,
+  "batch_size": 1,
+  "max_new_tokens": 512,
+  "chunk_seconds": 25.0,
+  "boundary_search_seconds": 2.0,
+  "silence_rms": 0.0001,
+  "seed": 42,
+  "training": {
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.05,
+    "learning_rate": 2e-5,
+    "per_device_train_batch_size": 4,
+    "per_device_eval_batch_size": 4,
+    "gradient_accumulation_steps": 2
+  },
+  "robust_data": {
+    "raw_dir": "data/raw/openslr",
+    "corpus_dir": "data/corpora",
+    "manifest_dir": "data/manifests/robust-v1",
+    "train_hours": 25.0,
+    "sample_rate": 16000,
+    "archives": {
+      "train-clean-100.tar.gz": "https://www.openslr.org/resources/12/train-clean-100.tar.gz",
+      "dev-clean.tar.gz": "https://www.openslr.org/resources/12/dev-clean.tar.gz",
+      "test-clean.tar.gz": "https://www.openslr.org/resources/12/test-clean.tar.gz",
+      "test-other.tar.gz": "https://www.openslr.org/resources/12/test-other.tar.gz",
+      "musan.tar.gz": "https://www.openslr.org/resources/17/musan.tar.gz",
+      "rirs_noises.zip": "https://www.openslr.org/resources/28/rirs_noises.zip"
+    },
+    "noise_split_ratios": {
+      "train": 0.8,
+      "dev": 0.1,
+      "test": 0.1
+    },
+    "condition_probabilities": {
+      "clean": 0.25,
+      "noise": 0.25,
+      "reverb": 0.25,
+      "noise_reverb": 0.25
+    },
+    "snr_db": [
+      -5,
+      0,
+      5,
+      10,
+      15,
+      20
+    ],
+    "global_gain_db": [
+      -6.0,
+      3.0
+    ],
+    "rir_tail_policy": "crop",
+    "peak_ceiling": 0.99,
+    "checksum_files": {
+      "md5sum.txt": "https://www.openslr.org/resources/12/md5sum.txt"
+    }
+  }
+}

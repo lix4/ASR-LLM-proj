@@ -1,0 +1,277 @@
+{
+  "selection_metric": "dev_generated_robust_wer_macro",
+  "experiment": "robust-lr2e-5-projector-frozen",
+  "config": "configs/robust-lr2e-5.json",
+  "candidates": [
+    {
+      "step": 200,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-200",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-200/summary.json",
+      "wer": 0.09989832231825115,
+      "robust_wer_macro": 0.08516211941478846,
+      "by_condition": {
+        "clean": {
+          "substitutions": 51,
+          "deletions": 8,
+          "insertions": 9,
+          "reference_words": 2248,
+          "wer": 0.030249110320284697,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 884,
+          "deletions": 227,
+          "insertions": 164,
+          "reference_words": 13488,
+          "wer": 0.09452846975088967,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1193,
+          "deletions": 279,
+          "insertions": 255,
+          "reference_words": 13488,
+          "wer": 0.12803973902728352,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 55,
+          "deletions": 9,
+          "insertions": 10,
+          "reference_words": 2248,
+          "wer": 0.03291814946619217,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 400,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-400",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-400/summary.json",
+      "wer": 0.10425139806812404,
+      "robust_wer_macro": 0.08963523131672597,
+      "by_condition": {
+        "clean": {
+          "substitutions": 63,
+          "deletions": 9,
+          "insertions": 12,
+          "reference_words": 2248,
+          "wer": 0.037366548042704624,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 935,
+          "deletions": 219,
+          "insertions": 175,
+          "reference_words": 13488,
+          "wer": 0.09853202846975088,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1257,
+          "deletions": 294,
+          "insertions": 231,
+          "reference_words": 13488,
+          "wer": 0.13211743772241993,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 62,
+          "deletions": 11,
+          "insertions": 13,
+          "reference_words": 2248,
+          "wer": 0.03825622775800712,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 600,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-600",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-600/summary.json",
+      "wer": 0.14740086426029486,
+      "robust_wer_macro": 0.1292506919731119,
+      "by_condition": {
+        "clean": {
+          "substitutions": 127,
+          "deletions": 10,
+          "insertions": 17,
+          "reference_words": 2248,
+          "wer": 0.06850533807829182,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1293,
+          "deletions": 270,
+          "insertions": 200,
+          "reference_words": 13488,
+          "wer": 0.130708778173191,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1580,
+          "deletions": 282,
+          "insertions": 711,
+          "reference_words": 13488,
+          "wer": 0.19076215895610912,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 124,
+          "deletions": 9,
+          "insertions": 16,
+          "reference_words": 2248,
+          "wer": 0.06628113879003558,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 800,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-800",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-800/summary.json",
+      "wer": 0.14778215556685306,
+      "robust_wer_macro": 0.13137603795966787,
+      "by_condition": {
+        "clean": {
+          "substitutions": 130,
+          "deletions": 11,
+          "insertions": 14,
+          "reference_words": 2248,
+          "wer": 0.06895017793594306,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1360,
+          "deletions": 188,
+          "insertions": 593,
+          "reference_words": 13488,
+          "wer": 0.15873368920521946,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1660,
+          "deletions": 271,
+          "insertions": 260,
+          "reference_words": 13488,
+          "wer": 0.16244068801897985,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 135,
+          "deletions": 11,
+          "insertions": 18,
+          "reference_words": 2248,
+          "wer": 0.07295373665480427,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 889,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-889",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-889/summary.json",
+      "wer": 0.15029232333502796,
+      "robust_wer_macro": 0.13273527085804668,
+      "by_condition": {
+        "clean": {
+          "substitutions": 127,
+          "deletions": 11,
+          "insertions": 16,
+          "reference_words": 2248,
+          "wer": 0.06850533807829182,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1388,
+          "deletions": 190,
+          "insertions": 592,
+          "reference_words": 13488,
+          "wer": 0.16088374851720047,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1681,
+          "deletions": 294,
+          "insertions": 272,
+          "reference_words": 13488,
+          "wer": 0.16659252669039146,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 131,
+          "deletions": 10,
+          "insertions": 18,
+          "reference_words": 2248,
+          "wer": 0.07072953736654804,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    }
+  ],
+  "selected": {
+    "step": 200,
+    "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-seed42/checkpoint-200",
+    "summary": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen/checkpoint-200/summary.json",
+    "wer": 0.09989832231825115,
+    "robust_wer_macro": 0.08516211941478846,
+    "by_condition": {
+      "clean": {
+        "substitutions": 51,
+        "deletions": 8,
+        "insertions": 9,
+        "reference_words": 2248,
+        "wer": 0.030249110320284697,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 100
+      },
+      "noise": {
+        "substitutions": 884,
+        "deletions": 227,
+        "insertions": 164,
+        "reference_words": 13488,
+        "wer": 0.09452846975088967,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 600
+      },
+      "noise_reverb": {
+        "substitutions": 1193,
+        "deletions": 279,
+        "insertions": 255,
+        "reference_words": 13488,
+        "wer": 0.12803973902728352,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 600
+      },
+      "reverb": {
+        "substitutions": 55,
+        "deletions": 9,
+        "insertions": 10,
+        "reference_words": 2248,
+        "wer": 0.03291814946619217,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 100
+      }
+    }
+  }
+}

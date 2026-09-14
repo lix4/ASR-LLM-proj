@@ -1,0 +1,49 @@
+{
+  "experiment": "robust-lr2e-5-projector-frozen-early",
+  "config": "configs/robust-lr2e-5.json",
+  "selected_step": 100,
+  "selected_checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-projector-frozen-early-seed42/checkpoint-100",
+  "dev_selection": "outputs/checkpoint-selection/robust-lr2e-5-projector-frozen-early/selection-summary.json",
+  "test_summary": "outputs/final-evaluation/robust-lr2e-5-projector-frozen-early-checkpoint-100-test-200x14/summary.json",
+  "test_wer": 0.0691904506848267,
+  "test_robust_wer_macro": 0.05914122478128906,
+  "test_by_condition": {
+    "clean": {
+      "substitutions": 55,
+      "deletions": 4,
+      "insertions": 8,
+      "reference_words": 3734,
+      "wer": 0.017943224424209963,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 200
+    },
+    "noise": {
+      "substitutions": 1027,
+      "deletions": 239,
+      "insertions": 166,
+      "reference_words": 22404,
+      "wer": 0.06391715765041957,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 1200
+    },
+    "noise_reverb": {
+      "substitutions": 1417,
+      "deletions": 382,
+      "insertions": 234,
+      "reference_words": 22404,
+      "wer": 0.09074272451347974,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 1200
+    },
+    "reverb": {
+      "substitutions": 68,
+      "deletions": 8,
+      "insertions": 9,
+      "reference_words": 3734,
+      "wer": 0.02276379217996786,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 200
+    }
+  },
+  "baseline_test_robust_wer_macro": 0.05854609295959055
+}

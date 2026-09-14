@@ -1,0 +1,174 @@
+{
+  "selection_metric": "dev_generated_robust_wer_macro",
+  "baseline": {
+    "wer": 0.1065391459074733,
+    "robust_wer_macro": 0.09042605773032819,
+    "by_condition": {
+      "clean": 0.03291814946619217,
+      "noise": 0.11313760379596678,
+      "noise_reverb": 0.12433274021352313,
+      "reverb": 0.033807829181494664
+    },
+    "summary": "outputs/baseline-qwen3-asr-0.6b/dev-100x14/summary.json"
+  },
+  "candidates": [
+    {
+      "arm": "clean",
+      "step": 200,
+      "wer": 0.14371504829689882,
+      "robust_wer_macro": 0.1270759193357058,
+      "by_condition": {
+        "clean": 0.060498220640569395,
+        "noise": 0.1485023724792408,
+        "noise_reverb": 0.16555456702253854,
+        "reverb": 0.06717081850533808
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-200/summary.json"
+    },
+    {
+      "arm": "clean",
+      "step": 400,
+      "wer": 0.13564438230808337,
+      "robust_wer_macro": 0.1190688018979834,
+      "by_condition": {
+        "clean": 0.05382562277580071,
+        "noise": 0.14309015421115065,
+        "noise_reverb": 0.15450771055753262,
+        "reverb": 0.059608540925266906
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-400/summary.json"
+    },
+    {
+      "arm": "clean",
+      "step": 600,
+      "wer": 0.1476232841891205,
+      "robust_wer_macro": 0.12761961249505735,
+      "by_condition": {
+        "clean": 0.054270462633451956,
+        "noise": 0.16978054567022538,
+        "noise_reverb": 0.1561387900355872,
+        "reverb": 0.05693950177935943
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-600/summary.json"
+    },
+    {
+      "arm": "clean",
+      "step": 800,
+      "wer": 0.13249872902897813,
+      "robust_wer_macro": 0.11526294978252273,
+      "by_condition": {
+        "clean": 0.05382562277580071,
+        "noise": 0.13738137603795966,
+        "noise_reverb": 0.15369217081850534,
+        "reverb": 0.0547153024911032
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-800/summary.json"
+    },
+    {
+      "arm": "clean",
+      "step": 889,
+      "wer": 0.12674758515505846,
+      "robust_wer_macro": 0.11061684460260972,
+      "by_condition": {
+        "clean": 0.0547153024911032,
+        "noise": 0.12448102016607354,
+        "noise_reverb": 0.15309905100830368,
+        "reverb": 0.054270462633451956
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-889/summary.json"
+    },
+    {
+      "arm": "robust",
+      "step": 200,
+      "wer": 0.17386883579054396,
+      "robust_wer_macro": 0.15186338473705022,
+      "by_condition": {
+        "clean": 0.06316725978647687,
+        "noise": 0.1797153024911032,
+        "noise_reverb": 0.20336595492289442,
+        "reverb": 0.07250889679715303
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-200/summary.json"
+    },
+    {
+      "arm": "robust",
+      "step": 400,
+      "wer": 0.1358350279613625,
+      "robust_wer_macro": 0.12052688809806249,
+      "by_condition": {
+        "clean": 0.059163701067615655,
+        "noise": 0.13938315539739027,
+        "noise_reverb": 0.15680604982206406,
+        "reverb": 0.0653914590747331
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-400/summary.json"
+    },
+    {
+      "arm": "robust",
+      "step": 600,
+      "wer": 0.13313421453990848,
+      "robust_wer_macro": 0.11775899565045472,
+      "by_condition": {
+        "clean": 0.05782918149466192,
+        "noise": 0.13545373665480426,
+        "noise_reverb": 0.15510083036773428,
+        "reverb": 0.06272241992882563
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-600/summary.json"
+    },
+    {
+      "arm": "robust",
+      "step": 800,
+      "wer": 0.13313421453990848,
+      "robust_wer_macro": 0.11746243574535391,
+      "by_condition": {
+        "clean": 0.056494661921708184,
+        "noise": 0.11847568208778173,
+        "noise_reverb": 0.17252372479240807,
+        "reverb": 0.06138790035587188
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-800/summary.json"
+    },
+    {
+      "arm": "robust",
+      "step": 889,
+      "wer": 0.1324351804778851,
+      "robust_wer_macro": 0.11662218268090153,
+      "by_condition": {
+        "clean": 0.05516014234875445,
+        "noise": 0.1162514827995255,
+        "noise_reverb": 0.17356168446026096,
+        "reverb": 0.06005338078291815
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-889/summary.json"
+    }
+  ],
+  "selected": {
+    "clean": {
+      "arm": "clean",
+      "step": 889,
+      "wer": 0.12674758515505846,
+      "robust_wer_macro": 0.11061684460260972,
+      "by_condition": {
+        "clean": 0.0547153024911032,
+        "noise": 0.12448102016607354,
+        "noise_reverb": 0.15309905100830368,
+        "reverb": 0.054270462633451956
+      },
+      "summary": "outputs/checkpoint-selection/clean/checkpoint-889/summary.json"
+    },
+    "robust": {
+      "arm": "robust",
+      "step": 889,
+      "wer": 0.1324351804778851,
+      "robust_wer_macro": 0.11662218268090153,
+      "by_condition": {
+        "clean": 0.05516014234875445,
+        "noise": 0.1162514827995255,
+        "noise_reverb": 0.17356168446026096,
+        "reverb": 0.06005338078291815
+      },
+      "summary": "outputs/checkpoint-selection/robust/checkpoint-889/summary.json"
+    }
+  }
+}

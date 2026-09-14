@@ -1,0 +1,241 @@
+{
+  "substitutions": 3903,
+  "deletions": 803,
+  "insertions": 911,
+  "reference_words": 52276,
+  "wer": 0.10744892493687352,
+  "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+  "samples": 2800,
+  "by_condition": {
+    "clean": {
+      "substitutions": 138,
+      "deletions": 5,
+      "insertions": 14,
+      "reference_words": 3734,
+      "wer": 0.042046063202999466,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 200
+    },
+    "noise": {
+      "substitutions": 1629,
+      "deletions": 267,
+      "insertions": 583,
+      "reference_words": 22404,
+      "wer": 0.11064988394929477,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 1200
+    },
+    "noise_reverb": {
+      "substitutions": 1971,
+      "deletions": 514,
+      "insertions": 299,
+      "reference_words": 22404,
+      "wer": 0.1242635243706481,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 1200
+    },
+    "reverb": {
+      "substitutions": 165,
+      "deletions": 17,
+      "insertions": 15,
+      "reference_words": 3734,
+      "wer": 0.05275843599357258,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 200
+    }
+  },
+  "by_condition_and_snr_db": {
+    "noise": {
+      "-5.0": {
+        "substitutions": 652,
+        "deletions": 160,
+        "insertions": 75,
+        "reference_words": 3734,
+        "wer": 0.23754686663095875,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "0.0": {
+        "substitutions": 357,
+        "deletions": 72,
+        "insertions": 418,
+        "reference_words": 3734,
+        "wer": 0.22683449384038565,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "10.0": {
+        "substitutions": 146,
+        "deletions": 11,
+        "insertions": 22,
+        "reference_words": 3734,
+        "wer": 0.04793786823781468,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "15.0": {
+        "substitutions": 142,
+        "deletions": 7,
+        "insertions": 15,
+        "reference_words": 3734,
+        "wer": 0.04392072844134976,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "20.0": {
+        "substitutions": 132,
+        "deletions": 5,
+        "insertions": 10,
+        "reference_words": 3734,
+        "wer": 0.03936797000535619,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "5.0": {
+        "substitutions": 200,
+        "deletions": 12,
+        "insertions": 43,
+        "reference_words": 3734,
+        "wer": 0.0682913765399036,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      }
+    },
+    "noise_reverb": {
+      "-5.0": {
+        "substitutions": 668,
+        "deletions": 280,
+        "insertions": 96,
+        "reference_words": 3734,
+        "wer": 0.2795929298339582,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "0.0": {
+        "substitutions": 471,
+        "deletions": 137,
+        "insertions": 120,
+        "reference_words": 3734,
+        "wer": 0.19496518478843064,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "10.0": {
+        "substitutions": 203,
+        "deletions": 13,
+        "insertions": 14,
+        "reference_words": 3734,
+        "wer": 0.061596143545795394,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "15.0": {
+        "substitutions": 180,
+        "deletions": 21,
+        "insertions": 15,
+        "reference_words": 3734,
+        "wer": 0.0578468130690948,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "20.0": {
+        "substitutions": 157,
+        "deletions": 14,
+        "insertions": 17,
+        "reference_words": 3734,
+        "wer": 0.05034815211569363,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      },
+      "5.0": {
+        "substitutions": 292,
+        "deletions": 49,
+        "insertions": 37,
+        "reference_words": 3734,
+        "wer": 0.10123192287091591,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 200
+      }
+    }
+  },
+  "by_noise_category": {
+    "music": {
+      "substitutions": 1085,
+      "deletions": 217,
+      "insertions": 115,
+      "reference_words": 16588,
+      "wer": 0.08542319749216301,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 922
+    },
+    "noise": {
+      "substitutions": 1248,
+      "deletions": 144,
+      "insertions": 117,
+      "reference_words": 21102,
+      "wer": 0.07150980949673016,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 1102
+    },
+    "speech": {
+      "substitutions": 1267,
+      "deletions": 420,
+      "insertions": 650,
+      "reference_words": 7118,
+      "wer": 0.3283225625175611,
+      "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+      "samples": 376
+    }
+  },
+  "robust_wer_macro": 0.09589061477117182,
+  "robust_wer_conditions": [
+    "noise",
+    "reverb",
+    "noise_reverb"
+  ],
+  "model": {
+    "model_id": "Qwen/Qwen3-ASR-0.6B",
+    "model_revision": "5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+    "checkpoint": "models/checkpoints/clean-acoustic-lora-r8-seed42/checkpoint-889",
+    "base_checkpoint": "/uufs/sci.utah.edu/projects/smartair/ASR-LLM-proj/models/hub/models--Qwen--Qwen3-ASR-0.6B/snapshots/5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+    "adapter": "/uufs/sci.utah.edu/projects/smartair/ASR-LLM-proj/models/checkpoints/clean-acoustic-lora-r8-seed42/checkpoint-889",
+    "device": "cuda:0",
+    "dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "batch_size": 1,
+    "max_new_tokens": 512,
+    "language": "English",
+    "context": "",
+    "do_sample": false,
+    "chunk_seconds": 25.0,
+    "boundary_search_seconds": 2.0,
+    "silence_rms": 0.0001,
+    "cpu_threads": 4
+  },
+  "manifest_sha256": "3372b9b671eb8ea61c40e872f40b32bdced29069c7ae25aaf471f72f3ed2cbc3",
+  "splits": [
+    "test"
+  ],
+  "model_load_seconds_excluding_download": 2.247779836994596,
+  "cold_first_request_seconds": 0.7567611299455166,
+  "warmup_requests": 1,
+  "concurrency": 1,
+  "evaluation_wall_seconds": 1400.4689410800347,
+  "resumed_samples": 0,
+  "audio_seconds": 19581.87087499988,
+  "peak_gpu_allocated_bytes": 1777878528,
+  "latency": {
+    "p50_seconds": 0.40749200800200924,
+    "p95_seconds": 1.1290998676326125
+  },
+  "input_duration": {
+    "p50_seconds": 5.5575,
+    "p95_seconds": 15.067499999999715
+  },
+  "timing_scope": "local requests: decode, resample, segment, encode and generate; no HTTP/queue",
+  "limitations": [
+    "Encoder/generation timing not separated in this evaluation entrypoint."
+  ],
+  "rtf_end_to_end": 0.07151864855099262,
+  "audio_seconds_per_wall_second": 13.982367120472118
+}

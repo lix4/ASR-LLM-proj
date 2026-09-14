@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "earnings-asr"
+version = "0.1.0"
+description = "Reproducible noise- and reverberation-robust English ASR experiments"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.11.4",
+  "pillow==11.3.0",
+  "soundfile==0.12.1",
+  "jiwer==4.0.0",
+  "huggingface-hub==0.36.2",
+  "pyarrow==20.0.0",
+]
+
+[project.optional-dependencies]
+model = [
+  "torch==2.8.0",
+  "torchaudio==2.8.0",
+  "torchvision==0.23.0",
+  "transformers==4.57.6",
+  "accelerate==1.10.1",
+  "datasets==3.6.0",
+  "peft==0.17.1",
+  "nagisa==0.2.11",
+  "soynlp==0.0.493",
+]
+service = ["fastapi==0.115.14", "uvicorn==0.34.3", "python-multipart==0.0.20"]
+dev = ["pytest==8.4.2", "httpx==0.28.1", "ruff==0.15.5"]
+
+[project.scripts]
+earnings-asr = "earnings_asr.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 100

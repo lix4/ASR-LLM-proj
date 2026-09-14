@@ -1,0 +1,40 @@
+{
+  "recipe": {
+    "id": "121-127105-0035:noise_reverb:5dB",
+    "split": "test",
+    "condition": "noise_reverb",
+    "speech_id": "121-127105-0035",
+    "text": "SHE PROMISED TO DO THIS AND SHE MENTIONED TO ME THAT WHEN FOR A MOMENT DISBURDENED DELIGHTED HE HELD HER HAND THANKING HER FOR THE SACRIFICE SHE ALREADY FELT REWARDED",
+    "noise_id": "musan:speech/us-gov/speech-us-gov-0112",
+    "rir_id": "slr28:simulated_rirs/largeroom/Room064/Room064-00053:ch0",
+    "rir_channel": 0,
+    "snr_db": 5.0,
+    "global_gain_db": 0.0,
+    "noise_crop_start": 1156360,
+    "seed": 7736198490917191944
+  },
+  "pretrained": {
+    "id": "121-127105-0035:noise_reverb:5dB",
+    "reference": "SHE PROMISED TO DO THIS AND SHE MENTIONED TO ME THAT WHEN FOR A MOMENT DISBURDENED DELIGHTED HE HELD HER HAND THANKING HER FOR THE SACRIFICE SHE ALREADY FELT REWARDED",
+    "prediction": "She promised to do this, and she mentioned to me that when for a moment, disburdened, delighted, she held her hand, thanking for the sacrifice. She already felt rewarded.",
+    "reference_normalized": "she promised to do this and she mentioned to me that when for a moment disburdened delighted he held her hand thanking her for the sacrifice she already felt rewarded",
+    "prediction_normalized": "she promised to do this and she mentioned to me that when for a moment disburdened delighted she held her hand thanking for the sacrifice she already felt rewarded",
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "reference_words": 30,
+    "duration_seconds": 14.15
+  },
+  "projector_frozen_checkpoint_100": {
+    "id": "121-127105-0035:noise_reverb:5dB",
+    "reference": "SHE PROMISED TO DO THIS AND SHE MENTIONED TO ME THAT WHEN FOR A MOMENT DISBURDENED DELIGHTED HE HELD HER HAND THANKING HER FOR THE SACRIFICE SHE ALREADY FELT REWARDED",
+    "prediction": "She promised to do this, and she mentioned to me that when for a moment, disburdened, delighted, he held her hand, thanking her for the sacrifice. She already felt rewarded.",
+    "reference_normalized": "she promised to do this and she mentioned to me that when for a moment disburdened delighted he held her hand thanking her for the sacrifice she already felt rewarded",
+    "prediction_normalized": "she promised to do this and she mentioned to me that when for a moment disburdened delighted he held her hand thanking her for the sacrifice she already felt rewarded",
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "reference_words": 30,
+    "duration_seconds": 14.15
+  }
+}

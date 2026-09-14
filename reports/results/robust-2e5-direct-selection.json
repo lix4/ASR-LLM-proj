@@ -1,0 +1,276 @@
+{
+  "selection_metric": "dev_generated_robust_wer_macro",
+  "config": "configs/robust-lr2e-5.json",
+  "candidates": [
+    {
+      "step": 200,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-200",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-200/summary.json",
+      "wer": 0.1780630401626843,
+      "robust_wer_macro": 0.15384045077105576,
+      "by_condition": {
+        "clean": {
+          "substitutions": 128,
+          "deletions": 10,
+          "insertions": 11,
+          "reference_words": 2248,
+          "wer": 0.06628113879003558,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1448,
+          "deletions": 180,
+          "insertions": 1215,
+          "reference_words": 13488,
+          "wer": 0.21077995255041518,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1734,
+          "deletions": 282,
+          "insertions": 442,
+          "reference_words": 13488,
+          "wer": 0.18223606168446027,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 129,
+          "deletions": 10,
+          "insertions": 15,
+          "reference_words": 2248,
+          "wer": 0.06850533807829182,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 400,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-400",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-400/summary.json",
+      "wer": 0.15664717844433146,
+      "robust_wer_macro": 0.13683768287860815,
+      "by_condition": {
+        "clean": {
+          "substitutions": 121,
+          "deletions": 10,
+          "insertions": 12,
+          "reference_words": 2248,
+          "wer": 0.06361209964412812,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1397,
+          "deletions": 147,
+          "insertions": 851,
+          "reference_words": 13488,
+          "wer": 0.17756524317912217,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1743,
+          "deletions": 230,
+          "insertions": 269,
+          "reference_words": 13488,
+          "wer": 0.16622182680901543,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 126,
+          "deletions": 8,
+          "insertions": 16,
+          "reference_words": 2248,
+          "wer": 0.06672597864768683,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 600,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-600",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-600/summary.json",
+      "wer": 0.15861718352821555,
+      "robust_wer_macro": 0.13849347568208778,
+      "by_condition": {
+        "clean": {
+          "substitutions": 121,
+          "deletions": 10,
+          "insertions": 12,
+          "reference_words": 2248,
+          "wer": 0.06361209964412812,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1358,
+          "deletions": 155,
+          "insertions": 949,
+          "reference_words": 13488,
+          "wer": 0.1825326215895611,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1725,
+          "deletions": 256,
+          "insertions": 255,
+          "reference_words": 13488,
+          "wer": 0.16577698695136417,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 129,
+          "deletions": 7,
+          "insertions": 15,
+          "reference_words": 2248,
+          "wer": 0.06717081850533808,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 800,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-800",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-800/summary.json",
+      "wer": 0.14069649211997967,
+      "robust_wer_macro": 0.12373962040332147,
+      "by_condition": {
+        "clean": {
+          "substitutions": 122,
+          "deletions": 11,
+          "insertions": 13,
+          "reference_words": 2248,
+          "wer": 0.06494661921708185,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1324,
+          "deletions": 156,
+          "insertions": 413,
+          "reference_words": 13488,
+          "wer": 0.14034697508896798,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1723,
+          "deletions": 233,
+          "insertions": 288,
+          "reference_words": 13488,
+          "wer": 0.16637010676156583,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 124,
+          "deletions": 6,
+          "insertions": 15,
+          "reference_words": 2248,
+          "wer": 0.0645017793594306,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    },
+    {
+      "step": 889,
+      "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-889",
+      "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-889/summary.json",
+      "wer": 0.16824478901881038,
+      "robust_wer_macro": 0.1451166468960063,
+      "by_condition": {
+        "clean": {
+          "substitutions": 120,
+          "deletions": 10,
+          "insertions": 13,
+          "reference_words": 2248,
+          "wer": 0.06361209964412812,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        },
+        "noise": {
+          "substitutions": 1323,
+          "deletions": 156,
+          "insertions": 899,
+          "reference_words": 13488,
+          "wer": 0.17630486358244365,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "noise_reverb": {
+          "substitutions": 1723,
+          "deletions": 230,
+          "insertions": 677,
+          "reference_words": 13488,
+          "wer": 0.19498813760379596,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 600
+        },
+        "reverb": {
+          "substitutions": 122,
+          "deletions": 6,
+          "insertions": 16,
+          "reference_words": 2248,
+          "wer": 0.06405693950177936,
+          "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+          "samples": 100
+        }
+      }
+    }
+  ],
+  "selected": {
+    "step": 800,
+    "checkpoint": "models/checkpoints/robust-acoustic-lora-r8-lr2e-5-seed42/checkpoint-800",
+    "summary": "outputs/checkpoint-selection/robust-lr2e-5/checkpoint-800/summary.json",
+    "wer": 0.14069649211997967,
+    "robust_wer_macro": 0.12373962040332147,
+    "by_condition": {
+      "clean": {
+        "substitutions": 122,
+        "deletions": 11,
+        "insertions": 13,
+        "reference_words": 2248,
+        "wer": 0.06494661921708185,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 100
+      },
+      "noise": {
+        "substitutions": 1324,
+        "deletions": 156,
+        "insertions": 413,
+        "reference_words": 13488,
+        "wer": 0.14034697508896798,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 600
+      },
+      "noise_reverb": {
+        "substitutions": 1723,
+        "deletions": 233,
+        "insertions": 288,
+        "reference_words": 13488,
+        "wer": 0.16637010676156583,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 600
+      },
+      "reverb": {
+        "substitutions": 124,
+        "deletions": 6,
+        "insertions": 15,
+        "reference_words": 2248,
+        "wer": 0.0645017793594306,
+        "normalization": "english_v1_nfkc_casefold_punctuation_space_preserve_numbers",
+        "samples": 100
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "model_id": "Qwen/Qwen3-ASR-0.6B",
+  "model_revision": "5eb144179a02acc5e5ba31e748d22b0cf3e303b0",
+  "upstream_revision": "7c6daf77a2421100f5fb066495372c00129d39ff",
+  "dataset_id": "kensho/spgispeech",
+  "dataset_revision": "14e69dd3b80e968282ca55d3eb2b39cc9db2b62e",
+  "data_dir": "data",
+  "model_dir": "models",
+  "output_dir": "outputs",
+  "device": "auto",
+  "cpu_threads": 4,
+  "batch_size": 1,
+  "max_new_tokens": 512,
+  "chunk_seconds": 25.0,
+  "boundary_search_seconds": 2.0,
+  "silence_rms": 0.0001,
+  "seed": 42,
+  "recording_id_pattern": "^([^/]+)/",
+  "hours": {"train": 25.0, "dev": 2.0, "test": 5.0},
+  "min_duration": 0.5,
+  "max_duration": 30.0
+}

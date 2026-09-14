@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-09-12T23:41:14.666834+00:00",
+  "platform": "Linux-6.8.0-139-generic-x86_64-with-glibc2.39",
+  "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]",
+  "cpu_count": 64,
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "torchaudio": "2.8.0+cu128",
+    "transformers": "4.57.6",
+    "qwen-asr": "0.0.6",
+    "datasets": null,
+    "numpy": "1.26.4",
+    "soundfile": "0.12.1",
+    "jiwer": "4.0.0",
+    "pyarrow": "20.0.0",
+    "fastapi": "0.115.14",
+    "pillow": "11.3.0",
+    "peft": null
+  },
+  "cuda_available": true,
+  "torch_cuda_build": "12.8",
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA L40S",
+      "free_bytes": 47240577024,
+      "total_bytes": 47695921152
+    }
+  ],
+  "disk_free_bytes": 802306715025408,
+  "disk_note": "Filesystem availability is not an individual user quota.",
+  "tools": {
+    "ffmpeg": false,
+    "nvidia-smi": true,
+    "nvcc": true
+  },
+  "hf_token_present": true,
+  "nvidia_smi": "0, NVIDIA L40S, 610.57.04"
+}
