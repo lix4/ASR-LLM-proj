@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="116" viewBox="0 0 900 116" role="img" aria-labelledby="title desc">
+  <title id="title">Open the input audio player</title>
+  <desc id="desc">Play the 14.15 second 5 dB noise plus room reverberation example</desc>
+  <rect width="900" height="116" rx="14" fill="#0d1117"/>
+  <circle cx="58" cy="58" r="34" fill="#238636"/>
+  <path d="M49 39 L49 77 L76 58 Z" fill="#ffffff"/>
+  <g stroke="#58a6ff" stroke-width="4" stroke-linecap="round">
+    <path d="M112 58v-10M126 58v22M140 58v-34M154 58v18M168 58v-27M182 58v39M196 58v-21M210 58v31M224 58v-45M238 58v25M252 58v-14M266 58v32M280 58v-24M294 58v15M308 58v-36M322 58v28M336 58v-18M350 58v38M364 58v-26"/>
+  </g>
+  <text x="400" y="51" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="700">OPEN INPUT AUDIO PLAYER</text>
+  <text x="400" y="79" fill="#8b949e" font-family="Arial, sans-serif" font-size="17">14.15 s · 5 dB interfering speech + held-out room RIR · MP3</text>
+</svg>

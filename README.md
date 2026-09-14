@@ -15,11 +15,9 @@ and Test generalization.
 
 ### Input audio
 
-<audio controls preload="metadata" src="docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3">
-  <a href="docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3">Play or download the MP3 input</a>
-</audio>
+[![Open the input audio player](docs/assets/examples/play-input-audio.svg)](https://github.com/lix4/ASR-LLM-proj/blob/main/docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3?raw=1)
 
-[Open or download the 14.15-second WAV](docs/assets/examples/121-127105-0035_noise-reverb_5dB.wav)
+**[▶ Play the 14.15-second MP3 input](https://github.com/lix4/ASR-LLM-proj/blob/main/docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3?raw=1)** · [Download WAV](docs/assets/examples/121-127105-0035_noise-reverb_5dB.wav)
 
 This is a fixed held-out Test input: LibriSpeech target speech is convolved with an
 unseen simulated large-room RIR and mixed with interfering MUSAN speech at 5 dB SNR.
