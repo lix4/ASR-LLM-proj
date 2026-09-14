@@ -15,9 +15,9 @@ and Test generalization.
 
 ### Input audio
 
-[![Open the input audio player](docs/assets/examples/play-input-audio.svg)](https://github.com/lix4/ASR-LLM-proj/blob/main/docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3?raw=1)
+[![Open the input audio player](docs/assets/examples/play-input-audio.svg)](https://lix4.github.io/ASR-LLM-proj/)
 
-**[▶ Play the 14.15-second MP3 input](https://github.com/lix4/ASR-LLM-proj/blob/main/docs/assets/examples/121-127105-0035_noise-reverb_5dB.mp3?raw=1)** · [Download WAV](docs/assets/examples/121-127105-0035_noise-reverb_5dB.wav)
+**[▶ Open audio demo — play, pause, and seek](https://lix4.github.io/ASR-LLM-proj/)** · [Download WAV](docs/assets/examples/121-127105-0035_noise-reverb_5dB.wav)
 
 This is a fixed held-out Test input: LibriSpeech target speech is convolved with an
 unseen simulated large-room RIR and mixed with interfering MUSAN speech at 5 dB SNR.
@@ -63,6 +63,23 @@ producing the net increase of 26 Test errors reported below.
 
 The experiment protocol is defined in [`task.md`](task.md). Generated corpora and
 model weights live under the `data` and `models` symlinks on shared storage.
+
+## Audio demo website
+
+The [GitHub Pages demo](https://lix4.github.io/ASR-LLM-proj/) puts the audio player
+and both transcripts on one page. The player supports play/pause, seeking with the
+progress bar, volume, and playback speed. Its audio files are served from the same
+site. GitHub repository READMEs do not preserve embedded audio controls, so the
+README links to this page.
+
+The static site is in `docs/`; it needs no backend or build dependencies. To enable
+hosting, open [Settings → Pages](https://github.com/lix4/ASR-LLM-proj/settings/pages),
+choose **Deploy from a branch**, select **main** and **/docs**, then **Save**. Once
+Pages is enabled, changes pushed to `main` are published automatically.
+
+For a local preview, open `docs/index.html` in a browser with its `assets` folder
+alongside it. Live hosting requires Pages to be enabled in the repository settings;
+uploading HTML alone does not enable it.
 
 ## Environment
 

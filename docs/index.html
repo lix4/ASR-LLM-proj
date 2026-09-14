@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Listen to a noisy, reverberant Test recording and compare pretrained Qwen3-ASR with Projector Frozen acoustic LoRA.">
+  <title>Robust Qwen3-ASR · Audio comparison</title>
+  <link rel="stylesheet" href="assets/demo.css">
+  <script src="assets/demo.js" defer></script>
+</head>
+<body>
+  <header class="masthead wrap">
+    <a class="brand" href="./">Robust Qwen3-ASR<span class="brand-dot" aria-hidden="true"></span></a>
+    <a href="https://github.com/lix4/ASR-LLM-proj">View repository <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">AUDIO DEMO / HELD-OUT TEST SAMPLE</p>
+      <h1 id="title">Listen. Compare the transcripts.</h1>
+      <p class="lead">One recording with background speech and room reverberation.
+        The same input, decoded by pretrained Qwen3-ASR and Projector Frozen LoRA.</p>
+    </section>
+    <section class="player panel" aria-labelledby="input-title">
+      <div class="section-top"><div><p class="eyebrow">01 / INPUT AUDIO</p>
+        <h2 id="input-title">Speech + noise + room reverberation</h2></div><span class="tag">14.15 seconds</span></div>
+      <div class="tags"><span>5 dB SNR</span><span>Interfering speech</span><span>Held-out large-room RIR</span></div>
+      <audio id="input-audio" controls preload="metadata" aria-label="Play the noisy and reverberant Test input">
+        <source src="assets/examples/121-127105-0035_noise-reverb_5dB.mp3" type="audio/mpeg">
+        <source src="assets/examples/121-127105-0035_noise-reverb_5dB.wav" type="audio/wav">
+        Your browser does not support embedded audio. Use the WAV download below.
+      </audio>
+      <div class="player-footer"><p>Press play. Drag the progress bar to seek.</p>
+        <label for="playback-speed">Speed <select id="playback-speed"><option value="0.75">0.75×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label>
+        <a href="assets/examples/121-127105-0035_noise-reverb_5dB.wav" download>Download original WAV</a></div>
+      <p id="audio-error" class="error" role="alert" hidden>The audio could not be loaded. Try reloading this page or open the WAV download above.</p>
+    </section>
+    <section class="comparison" aria-labelledby="comparison-title">
+      <p class="eyebrow">02 / OUTPUT COMPARISON</p><h2 id="comparison-title">Two word errors corrected</h2>
+      <div class="reference"><h3>Reference transcript</h3><p>She promised to do this and she mentioned to me that when for a moment disburdened delighted he held her hand thanking her for the sacrifice she already felt rewarded</p></div>
+      <div class="output-grid">
+        <article class="panel output baseline"><div class="section-top"><div><p class="eyebrow">PRETRAINED</p><h3>Qwen3-ASR-0.6B</h3></div><div class="score">6.67%<span>sample WER</span></div></div>
+          <p class="transcript">She promised to do this, and she mentioned to me that when for a moment, disburdened, delighted, <mark>she</mark> held her hand, thanking for the sacrifice. She already felt rewarded.</p><p class="edit-count">1 substitution · 1 deletion · 0 insertions</p></article>
+        <article class="panel output tuned"><div class="section-top"><div><p class="eyebrow">ACOUSTIC LORA / STEP 100</p><h3>Projector Frozen</h3></div><div class="score">0.00%<span>sample WER</span></div></div>
+          <p class="transcript">She promised to do this, and she mentioned to me that when for a moment, disburdened, delighted, <mark>he</mark> held her hand, thanking <mark>her</mark> for the sacrifice. She already felt rewarded.</p><p class="edit-count">0 substitutions · 0 deletions · 0 insertions</p></article>
+      </div>
+      <p class="explanation">The pretrained output changes <strong>he → she</strong> and omits <strong>her</strong> after “thanking”. Projector Frozen matches all 30 reference words after the common scoring normalization.</p>
+    </section>
+    <section class="results" aria-labelledby="results-title">
+      <p class="eyebrow">03 / AGGREGATE CONTEXT</p><h2 id="results-title">A sample-level win; mixed overall results.</h2>
+      <p>Across the fixed Test set, the selected SFT model improves Noise WER slightly.
+        Pretrained Qwen retains the lower aggregate Robust WER. All numbers below are WER percentages; lower is better.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="WER results, scroll horizontally on small screens"><table><caption>Pretrained vs. Projector Frozen checkpoint 100</caption><thead><tr><th scope="col">Split</th><th scope="col">Condition</th><th scope="col">Pretrained</th><th scope="col">Projector Frozen</th></tr></thead><tbody><tr><td>Dev</td><th scope="row">Clean</th><td>3.2918%</td><td><strong>3.2473%</strong></td></tr>
+<tr><td>Dev</td><th scope="row">Reverb</th><td>3.3808%</td><td><strong>3.2473%</strong></td></tr>
+<tr><td>Dev</td><th scope="row">Noise</th><td>11.3138%</td><td><strong>9.4454%</strong></td></tr>
+<tr><td>Dev</td><th scope="row">Noise + reverb</th><td>12.4333%</td><td><strong>12.3591%</strong></td></tr>
+<tr><td>Dev</td><th scope="row">Robust (macro)</th><td>9.0426%</td><td><strong>8.3506%</strong></td></tr>
+<tr><td>Test</td><th scope="row">Clean</th><td><strong>1.7675%</strong></td><td>1.7943%</td></tr>
+<tr><td>Test</td><th scope="row">Reverb</th><td><strong>2.1960%</strong></td><td>2.2764%</td></tr>
+<tr><td>Test</td><th scope="row">Noise</th><td>6.4185%</td><td><strong>6.3917%</strong></td></tr>
+<tr><td>Test</td><th scope="row">Noise + reverb</th><td><strong>8.9493%</strong></td><td>9.0743%</td></tr>
+<tr><td>Test</td><th scope="row">Robust (macro)</th><td><strong>5.8546%</strong></td><td>5.9141%</td></tr></tbody></table></div>
+      <p class="context">Checkpoint 100 was selected on generated Dev Robust WER. Robust WER averages Noise, Reverb, and Noise + reverb equally. Test contains 200 utterances × 14 conditions: 49 inputs improve, 2,667 tie, and 84 worsen by edit count.</p>
+      <a class="text-link" href="https://github.com/lix4/ASR-LLM-proj#detailed-pretrained-versus-best-sft-comparison">Read the full experiment results <span aria-hidden="true">↗</span></a>
+    </section>
+    <details class="recipe panel"><summary>Audio recipe &amp; sources</summary>
+      <dl><dt>Test recipe</dt><dd><code>121-127105-0035:noise_reverb:5dB</code></dd>
+      <dt>Noise</dt><dd>MUSAN speech-us-gov-0112</dd><dt>Room response</dt><dd>SLR28 largeroom/Room064/Room064-00053, channel 0</dd>
+      <dt>SNR</dt><dd>5.0 dB target and measured</dd><dt>Audio</dt><dd>16 kHz mono · 14.15 s source duration · MP3 listening copy; WAV download</dd>
+      <dt>Seed / crop offset</dt><dd>7736198490917191944 / 1156360 samples</dd></dl>
+      <p>The MP3 is a listening copy of the fixed evaluation waveform; scoring used the original waveform. The two model outputs above are saved evaluation predictions.</p>
+      <p>Derived audio sources: <a href="https://www.openslr.org/12/">LibriSpeech</a> and <a href="https://www.openslr.org/17/">MUSAN</a> (CC BY 4.0); <a href="https://www.openslr.org/28/">SLR28</a> (Apache 2.0).</p>
+    </details>
+  </main>
+  <footer class="wrap">Robust Qwen3-ASR · <a href="https://github.com/lix4/ASR-LLM-proj/blob/main/reports/results/paired-example.json">Sample &amp; prediction record</a></footer>
+</body>
+</html>
